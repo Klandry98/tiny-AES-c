@@ -10,9 +10,9 @@ int main(void) {
     struct AES_ctx ctx;
     AES_init_ctx(&ctx, key);
 
-    for (int i = 0; i < 1000000; i++) {
+    for (int i = 0; i < 1000000000000000000; i++) {
         AES_ECB_encrypt(&ctx, buf);
     }
-    printf("1000000 Verschluesselungen abgeschlossen\n");
+    printf(" 1000000000000000000 Verschluesselungen abgeschlossen\n");
     return 0;
 }
